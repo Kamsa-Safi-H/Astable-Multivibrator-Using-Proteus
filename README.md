@@ -11,6 +11,8 @@ To design and simulate an Astable Multivibrator using NE555 in Proteus Design Su
 •	CRO / Oscilloscope
 •	Connecting wires
 ## Circuit Diagram
+<img width="685" height="515" alt="Screenshot 2026-02-25 132155" src="https://github.com/user-attachments/assets/617a03ca-f7bd-4b46-95ab-b26e5549aa4e" />
+
 Pin Configuration of 555 Timer:
 •	Pin 1 → Ground
 •	Pin 2 → Trigger
@@ -37,8 +39,13 @@ Pin Configuration of 555 Timer:
 6.	Observe square wave output at Pin 3.
 7.	Measure time period and frequency.
 ## Tabulation
-S.No	        R1 (kΩ)	      R2 (kΩ)	       C (µF)	        Theoretical Frequency	          Practical Frequency
+| **S.No** | **R1 (kΩ)** | **R2 (kΩ)** | **C (µF)** | **Theoretical Frequency (Hz)** | **Practical Frequency (Hz)** |
+| -------- | ----------- | ----------- | ---------- | ------------------------------ | ---------------------------- |
+| 1        | 10          | 500         | 0.1        | 14.25                          | 14.25                        |
+
 ## Waveforms
+<img width="692" height="461" alt="image" src="https://github.com/user-attachments/assets/b3eb9549-44a2-465c-97ea-ec768bda02be" />
+
 •	Output (Pin 3) → Square wave
 •	Capacitor voltage → Exponential charging & discharging waveform
 ## Result
@@ -51,8 +58,19 @@ The practical frequency closely matches the theoretical frequency.
 •	Increasing R or C decreases frequency.
 •	Used in clock generation, LED flashing, and tone generation.
 ## Viva Questions
-1.	What are the operating modes of 555 timer?
-2.	What are the threshold levels in astable mode?
-3.	Write the frequency formula.
-4.	What is duty cycle?
-5.	What happens if R2 increases?
+
+1. What are the operating modes of 555 timer?
+The 555 timer operates in three different modes namely monostable mode, astable mode and bistable mode, depending on the external components connected to it.
+
+2. What are the threshold levels in astable mode?
+In astable mode of the 555 timer, the capacitor voltage continuously varies between one-third of the supply voltage and two-thirds of the supply voltage.
+
+3. Write the frequency formula.
+The frequency of oscillation in astable mode of the 555 timer is given by
+  f = 1.44/(R1+2R2)C
+
+5. What is duty cycle?
+Duty cycle is defined as the ratio of the time for which the output remains HIGH to the total time period of the waveform and is usually expressed in percentage.
+
+6. What happens if R2 increases?
+When the value of resistor R2 is increased, the charging and discharging time of the capacitor increases, which results in an increase in time period and a decrease in frequency.
